@@ -400,7 +400,7 @@
         <div class="footer-subskribe">
           <h4 class="footer-title">Subscribe</h4>
 
-          <form name="subskribe">
+          <form name="subskribe" class="form-footer">
             
               <input
                 class="input-footer"
@@ -453,8 +453,8 @@
 
             <div class="name-list">
               <label class="form-label" for="user-phone">Phone</label>
-              <div class="input-box"></div>
-              <input
+              <div class="input-box">
+                 <input
                 class="form-input"
                 type="text"
                 name="user-phone"
@@ -464,12 +464,15 @@
               <svg class="form-img">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
+              </div>
+             
               
             </div>
 
             <div class="name-list">
               <label class="form-label" for="user-message">Email</label>
-              <div class="input-box"></div><input
+              <div class="input-box">
+                <input
                 class="form-input"
                 type="text"
                 name="user-message"
@@ -479,6 +482,7 @@
               <svg class="form-img">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
+              </div>
             </div>
 
             <div class="name-list">
@@ -487,13 +491,13 @@
                 class="form-comments"
                 name="user-comments"
                 id="user-comments"
-                placeholder="Text-imput"
+                placeholder="Text-input"
               ></textarea>
             </div>
-            <div>
-              <label class="accept " for="form-comments"> I accept the terms and conditions of the 
+            <div class="name-policy">
+              <label class="accept" for="form-comments"> I accept the terms and conditions of the 
                 <a class="privacy-policy"> Privacy Policy</a></label>
-              <input type="checkbox" name="Privacy Policy" class="visually-hidden" >
+              <input type="checkbox" name="Privacy Policy" class="visually-hidden input-checkbox" >
               <button type="submit" class="button-send">Send</button>
             </div>
             

@@ -529,6 +529,8 @@ img {
   letter-spacing: 0.04em;
   background-color: transparent;
 
+  margin-right: 24px;
+
   width: 264px;
   height: 40px;
 
@@ -537,6 +539,10 @@ img {
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-footer {
+  display: flex;
 }
 
 .subskribe-icon {
@@ -558,6 +564,7 @@ img {
   border-radius: 4px;
   text-align: center;
   border: 1px solid transparent;
+  
 
   margin: 0 auto;
   display: flex;
@@ -788,6 +795,10 @@ img {
   margin-bottom: 8px;
 }
 
+.name-policy {
+  margin-top: 16px;
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -801,7 +812,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -811,7 +822,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1;
-  padding-bottom: 16px;
+  margin-bottom: 4px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -831,24 +842,22 @@ img {
   height: 40px;
 }
 
-.form-input:checked + .form-img {
+.form-input:focus + .form-img {
   color: #404bbf;
 }
 
-.form-input:hover,
-.form-input:focus {
-  border-color: var(--social-color);
-}
 
 .form-img {
   position: absolute;
   width: 18px;
   height: 24px;
   fill: var(--text-color);
-  position: absolute;
+ 
   left: 16px;
   top: 50%;
   cursor: pointer;
+
+  transform: translateY(-50%);
 }
 
 .form-img:focus,
@@ -908,7 +917,8 @@ img {
   border-radius: 2px;
   cursor: pointer;
 }
-.form-comments:checked + .accept::before {
+
+.input-checkbox:checked + .accept::before {
   background-color: var(--hover-social);
   background-image: url(../images/symbol-defs.svg);
   background-repeat: no-repeat;
